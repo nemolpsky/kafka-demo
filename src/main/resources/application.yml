@@ -1,0 +1,11 @@
+
+spring:
+  kafka:
+    bootstrap-servers: localhost:9092
+    consumer:
+#    如果spring没有声明配置，使用properties按照Kafka官网的参数配置即可
+      properties:
+        {max.poll.interval.ms: 300000, max.poll.records: 100}
+server:
+  port: 8888
+
